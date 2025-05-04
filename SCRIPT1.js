@@ -1,13 +1,21 @@
-let VarGlobal1="texto de variable global"
+const herramientas = document.getElementById("herramientas");
+const desarmador = document.getElementById("desarmador");
+const tipoLlave = document.getElementById("tipo-llave");
 
-function FCambioColor() {
-    let vtexto1 =document.getElementById("HERRAMIENTAS");
-    vtexto1.textContent= "texto cambiado por funcion FCambioColor"; 
-    vtexto1.style.color="BLUE"; 
-    vtexto1.insertAdjacentHTML("beforeend",
-                                 "<br>este texto es adicional <br>");
-    vtexto1.style.backgroundColor="green";
+function FCambioTexto() {
+    herramientas.innerText = "Alicates de corte y de punta";
+    herramientas.style.color = "blue";
+}
 
-    vtexto1.insertAdjacentHTML("beforeend", VarGlobal1);
+function FCambioColor(){
+    desarmador.classList.remove("color-azul");
+    desarmador.classList.add("color-rojo");
+}
 
+function FCambioTag(){
+    const nuevoElemento = document.createElement("h2");
+    nuevoElemento.innerText = tipoLlave.innerText;
+    tipoLlave.replaceWith(nuevoElemento);
+
+    nuevoElemento.innerText = "Llave N° 10 y N° 12";
 }

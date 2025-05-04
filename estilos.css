@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #797983;
   color: #333;
   line-height: 1.6;
@@ -44,10 +44,10 @@ nav a:hover {
 /*BIENVENIDA*/
 
 .bienvenida {
-  background-image: url('IMAGENES/fondo1.jpg');
-  background-size: cover;/* Hace que la imagen cubra todo el contenedor */
+  background-image: url("IMAGENES/fondo1.jpg");
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen dentro del contenedor */
-  color: rgb(255, 255, 255);/* Esto es para el color letra de hero */
+  color: rgb(255, 255, 255); /* Esto es para el color letra de hero */
   text-align: center;
   padding: 100px 20px;
 }
@@ -79,14 +79,13 @@ nav a:hover {
 }
 /*PRDUCTOS */
 .productos {
-  background-image: url('IMAGENES/fondo2.jfif');
+  background-image: url("IMAGENES/fondo2.jfif");
   background-color: #eec094; /* Tendra este color de fondo en caso no cargue la imagen */
   background-size: cover; /* Hace que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen dentro del contenedor */
   padding: 40px 20px;
   text-align: center;
 }
-
 
 .productos h2 {
   font-size: 2em;
@@ -169,6 +168,55 @@ nav a:hover {
 .menu-principal > li {
   float: left;
 }
+
+.herramientas > .bg-banner {
+  background-image: url("IMAGENES/portada2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.herramientas > .bg-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.herramientas > .container {
+  position: relative;
+  z-index: 99;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.herramientas > .container .title{
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+.herramientas > .container .description,
+.herramientas > .container .parrafo {
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.herramientas > .container .color-azul {
+  color: #00f;
+}
+
+.herramientas > .container .color-rojo {
+  color: #f00;
+}
+
 /*FINAL DE LA PAGINA */
 footer {
   background-color: #ffdeb4;

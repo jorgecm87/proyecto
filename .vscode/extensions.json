@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ritwickdey.liveserver",
+        "sonarsource.sonarlint-vscode",
+        "ms-ceintl.vscode-language-pack-es"
+    ]
+}
